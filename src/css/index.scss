@@ -1,0 +1,204 @@
+@import "common.scss";
+@import "_minix.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(45px);
+    background: #06c1b0;
+    @include box_flex;
+    @include align;
+    @include justify(space-between);
+    color: #fff;
+    h2 {
+        width: pxTorem(50px);
+        height: pxTorem(45px);
+        line-height: pxTorem(45px);
+        text-align: center;
+        i.icon {
+            font-size: pxTorem(14px);
+            color: #fff;
+        }
+    }
+    p {
+        width: 90%;
+        background: #0da598;
+        height: pxTorem(30px);
+        @include box_flex;
+        @include align;
+        i.icon {
+            font-size: pxTorem(16px);
+            margin-left: pxTorem(5px);
+        }
+        input {
+            width: 90%;
+            margin-left: pxTorem(5px);
+        }
+    }
+    h3 {
+        width: pxTorem(50px);
+        height: pxTorem(45px);
+        @include box_flex;
+        @include direction(column);
+        @include justify;
+        @include align;
+        i.icon {
+            font-size: pxTorem(16px);
+            color: #fff;
+        }
+    }
+}
+
+section {
+    @include flex;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.banna {
+    width: 100%;
+    height: pxTorem(180px);
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.post {
+    position: absolute;
+    width: pxTorem(200px);
+    @include box_flex;
+    left: 36%;
+    top: 50%;
+    .left {
+        display: inline-block;
+        width: pxTorem(80px);
+        text-align: center;
+        height: pxTorem(40px);
+        line-height: pxTorem(40px);
+        border-radius: pxTorem(20px);
+        border: 1px solid #64c9bb;
+    }
+    .right {
+        margin-left: pxTorem(10px);
+        display: inline-block;
+        width: pxTorem(80px);
+        text-align: center;
+        height: pxTorem(40px);
+        line-height: pxTorem(40px);
+        background: #64c9bb;
+        border-radius: pxTorem(20px);
+    }
+}
+
+.swiper-pagination {
+    padding-top: pxTorem(8px);
+    span {
+        width: pxTorem(10px);
+        height: pxTorem(10px);
+    }
+}
+
+.conter {
+    width: 100%;
+    @include box_flex;
+    flex-wrap: wrap;
+    dl {
+        width: 20%;
+        text-align: center;
+        @include sizing;
+        margin-top: pxTorem(10px);
+        dt {
+            span {
+                width: pxTorem(50px);
+                height: pxTorem(50px);
+                border-radius: 50%;
+                margin: 0 auto;
+                display: inline-block;
+                @include box_flex;
+                @include align;
+                @include justify;
+                background: #ffce3d;
+                i.icon {
+                    font-size: pxTorem(22px);
+                }
+            }
+        }
+        dd {
+            text-align: center;
+            margin-top: pxTorem(5px);
+            @include sizing;
+            padding-bottom: pxTorem(10px);
+        }
+    }
+}
+
+h5 {
+    width: 100%;
+    height: pxTorem(10px);
+    background: #ccc;
+}
+
+.item {
+    width: 100%;
+    .text {
+        width: 95%;
+        margin-left: 5%;
+        .love {
+            width: 100%;
+            height: pxTorem(40px);
+            line-height: pxTorem(40px);
+            border-bottom: 1px solid #ccc;
+        }
+        .milk {
+            width: 100%;
+            @include sizing;
+            padding: pxTorem(10px);
+            border-bottom: 1px solid #ccc;
+            dl {
+                @include box_flex;
+                dt {
+                    img {
+                        width: pxTorem(100px);
+                        height: pxTorem(100px);
+                    }
+                }
+                dd {
+                    @include flex;
+                    @include sizing;
+                    padding-left: pxTorem(10px);
+                    @include box_flex;
+                    @include direction(column);
+                    @include justify(space-between);
+                    .one {
+                        width: 100%;
+                        @include box_flex;
+                        @include justify(space-between);
+                        @include align;
+                        @include sizing;
+                        padding: pxTorem(10px);
+                        h6 {
+                            span {
+                                color: #64c9bb;
+                                font-size: pxTorem(18px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
